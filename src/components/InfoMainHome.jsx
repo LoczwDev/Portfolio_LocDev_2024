@@ -104,7 +104,7 @@ export const InfoMainHome = () => {
           <h2 className="text-3xl">
             I am Professional User <br /> Experience Designer
           </h2>
-          <p className="text-gray-400 text-base text-justify ">
+          <p className="text-gray-500 text-base text-justify ">
             I design and develop services for customers specializing creating
             stylish, modern websites, web services and online stores. My passion
             is to design digital user experiences. I design and develop services

@@ -46,6 +46,7 @@ export const BlogHome = () => {
   const options = {
     responsiveClass: true,
     dots: true,
+    margin: 30,
     responsive: {
       0: {
         items: 1,

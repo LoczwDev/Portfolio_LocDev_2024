@@ -18,7 +18,7 @@ const Service = () => {
         {/* text */}
         <div className="text-center flex flex-col items-center justify-center lg:text-left mb-4 w-full">
           <H2MainTitle title={"Service"} />
-          <p className="mb-4 text-center">
+          <p className="mb-4 text-center text-black">
             Explore my design services, from user interface and experience to
             prototyping and testing. <br /> Let's craft exceptional digital
             experiences together.

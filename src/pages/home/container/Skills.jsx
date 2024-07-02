@@ -22,7 +22,7 @@ const Skills = () => {
       <div className="w-full text-center my-10">
         <H2MainTitle title={"Skills"} />
         <div className="text-center w-full">
-          <p>
+          <p className="text-gray-500">
             As a frontend developer, I specialize in creating visually stunning
             and functional digital experiences. <br /> My expertise lies in UI
             design and UX research, ensuring that every digital solution I
