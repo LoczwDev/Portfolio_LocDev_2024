@@ -56,7 +56,7 @@ export const InfoMainHome = () => {
   return (
     <div
       name="about"
-      className="xl:absolute relative z-[50] lg:-bottom-40 bottom-0 bg-white flex xl:flex-row flex-col justify-between items-start gap-5 lg:p-10 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] max-w-7xl w-full right-[50%] transform translate-x-1/2"
+      className="xl:absolute relative z-[50] xl:-bottom-40 bottom-0 bg-white flex xl:flex-row flex-col justify-between items-start gap-5 lg:p-10 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:max-w-7xl w-full right-[50%] transform translate-x-1/2"
     >
       <motion.div
         ref={ref}

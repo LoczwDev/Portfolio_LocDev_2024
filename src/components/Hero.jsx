@@ -52,7 +52,7 @@ export const Hero = () => {
     return () => clearInterval(interval);
   }, [currentCharIndex, currentIndex, isDeleting, dataText]);
   return (
-    <section className="w-full lg:h-[150vh] h-auto z-10 bg_hero relative">
+    <section className="w-full xl:h-[150vh] h-auto z-10 bg_hero relative">
       <div className="relative flex flex-col-reverse items-center justify-between w-full md:flex-row py-8 max-w-7xl mx-auto pt-20 lg:px-0 px-2">
         <div className="flex flex-col items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
           <motion.div

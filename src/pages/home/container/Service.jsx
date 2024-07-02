@@ -11,7 +11,7 @@ const Service = () => {
   });
   return (
     <div
-      className="max-w-7xl mx-auto lg:mt-32 mt-12 lg:px-0 px-5"
+      className="max-w-7xl mx-auto mt-32 lg:px-0 px-5"
       name="services"
     >
       <div className="w-full flex flex-col items-center justify-center">
