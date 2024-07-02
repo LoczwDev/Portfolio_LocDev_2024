@@ -1,0 +1,22 @@
+.bg_hero {
+  background: rgb(255, 223, 168);
+  background: linear-gradient(
+    258deg,
+    rgba(255, 223, 168, 1) 12%,
+    rgba(196, 207, 245, 1) 100%,
+    rgba(218, 77, 241, 1) 100%
+  );
+  background-size: cover;
+
+}
+
+.owl-dots button.active {
+  width: 50px;
+}
+.owl-dots button {
+  margin: 5px 7px !important;
+}
+.owl-dots button.active span {
+  width: 100% !important;
+  background-color: #a53dff !important;
+}
