@@ -13,8 +13,8 @@ export const MainLayout = ({ children }) => {
       <Header hanlderMenu={hanlderMenu} />
       <div
         className={`z-[8888] ${
-          checkMenu ? "opacity-100" : "opacity-0"
-        } bg-black/50 fixed top-0 left-0 h-full w-full lg:hidden`}
+          checkMenu ? "opacity-100" : "opacity-0 hidden"
+        } bg-black/50 fixed top-0 left-0 h-full w-full`}
       />
       {children}
       <ButtonTopPage />

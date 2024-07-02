@@ -123,7 +123,7 @@ export const InfoMainHome = () => {
           <div className="flex items-center gap-5 w-full">
             <div
               onClick={handleDownloadPdf}
-              className="flex items-center gap-3 bg-purple-500 px-5 py-2.5 rounded-full text-white cursor-pointer"
+              className="flex items-center gap-3 bg-accent border border-accent hover:bg-transparent duration-300 hover:text-accent px-5 py-2.5 rounded-full text-white cursor-pointer"
             >
               <LuDownload /> <span> Download CV</span>
             </div>

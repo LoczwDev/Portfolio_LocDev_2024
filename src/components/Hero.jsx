@@ -22,7 +22,7 @@ const dataInfo = [
 export const Hero = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0.05,
   });
 
   const dataText = ["Tran Huu Loc", "Web Developer", "FrontEnd Developer"];
@@ -53,7 +53,7 @@ export const Hero = () => {
   }, [currentCharIndex, currentIndex, isDeleting, dataText]);
   return (
     <section className="w-full lg:h-[150vh] h-auto z-10 bg_hero relative">
-      <div className="relative flex flex-col-reverse items-center justify-between w-full md:flex-row py-8 max-w-7xl mx-auto pt-20">
+      <div className="relative flex flex-col-reverse items-center justify-between w-full md:flex-row py-8 max-w-7xl mx-auto pt-20 lg:px-0 px-2">
         <div className="flex flex-col items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
           <motion.div
             ref={ref}
@@ -79,7 +79,7 @@ export const Hero = () => {
               </div>
             </div>
           </motion.div>
-          <div className="flex items-center gap-1 w-full mt-10 ">
+          <div className="flex flex-wrap items-center gap-1 w-full mt-10 ">
             {dataInfo.map((item, index) => (
               <motion.div
                 ref={ref}
@@ -87,7 +87,7 @@ export const Hero = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1 }}
                 key={index}
-                className="flex flex-col bg-accent/20 rounded-xl text-gray-700 px-5 py-3 items-center lg:w-[200px] w-[150px]"
+                className="flex flex-col bg-accent/20 rounded-xl text-gray-700 px-5 py-3 items-center xl:w-[200px] lg:w-[197px] w-full"
               >
                 <h5 className="font-bold lg:text-[32px] text-[20px]">{item.title}</h5>
                 <p className="text-gray-500 lg:text-base text-[14px]">{item.subtitle}</p>
@@ -97,9 +97,9 @@ export const Hero = () => {
         </div>
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: 100 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 2 }}
           className="border border-yellow-500 rounded-full shadow-yellow-800/80 shadow-2xl"
         >
           <img

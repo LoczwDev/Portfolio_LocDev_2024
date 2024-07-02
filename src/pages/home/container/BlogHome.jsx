@@ -5,11 +5,43 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import { ItemBlog } from "../../../components/ItemBlog";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import images from "../../../constants/images/images";
 
 export const BlogHome = () => {
+  const currentDate = new Date();
+  const dataBlog = [
+    {
+      name: "How to Own Your Audience by Creating an Email List",
+      thumbnail: images.Blog,
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+      type: "UI-UX DESIGN",
+      time: currentDate,
+    },
+    {
+      name: "How to Own Your Audience by Creating an Email List",
+      thumbnail: images.Blog,
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+      type: "UI-UX DESIGN",
+      time: currentDate,
+    },
+    {
+      name: "How to Own Your Audience by Creating an Email List",
+      thumbnail: images.Blog,
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+      type: "UI-UX DESIGN",
+      time: currentDate,
+    },
+    {
+      name: "How to Own Your Audience by Creating an Email List",
+      thumbnail: images.Blog,
+      desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+      type: "UI-UX DESIGN",
+      time: currentDate,
+    },
+  ];
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.1,
+    threshold: 0.5,
   });
   const options = {
     responsiveClass: true,
@@ -27,7 +59,7 @@ export const BlogHome = () => {
     },
   };
   return (
-    <section className="max-w-7xl mx-auto lg:px-0 px-5" name='blog'>
+    <section className="max-w-7xl mx-auto lg:px-0 px-5" name="blog">
       <div className="w-full flex justify-between items-center mt-5">
         <h5 className="text-[38px] font-semibold text-center">
           My <span className="text-purple-500">Blog</span>
@@ -42,13 +74,17 @@ export const BlogHome = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
-        <OwlCarousel {...options} loop className="owl-theme">
-          <ItemBlog />
-          <ItemBlog />
-          <ItemBlog />
-          <ItemBlog />
-          <ItemBlog />
-        </OwlCarousel>
+        {dataBlog?.length > 0 ? (
+          <OwlCarousel {...options} loop className="owl-theme">
+            {dataBlog.map((item, index) => (
+              <ItemBlog item={item} key={index} />
+            ))}
+          </OwlCarousel>
+        ) : (
+          <div className="py-2 bg-accent text-white rounded-full w-full">
+            <p>There is currently no content for this section</p>
+          </div>
+        )}
       </motion.div>
     </section>
   );

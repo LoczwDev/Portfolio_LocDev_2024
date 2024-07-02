@@ -40,12 +40,12 @@ const TestimonialSlider = () => {
         clickable: true,
       }}
       modules={[Navigation]}
-      className="h-[300px]"
+      className="lg:h-[300px] h-[450px]"
     >
       {/* Add your slides here */}
       {testimonialData.map((person, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 text-white">
+          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full lg:px-16 px-0  text-white">
             <div className="w-full max-w-[200px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
                 <div className="mb-2 mx-auto">
